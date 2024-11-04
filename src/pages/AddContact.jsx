@@ -6,7 +6,7 @@ function AddContact() {
     id: "",
     name: "",
     email: "",
-    mobile: "",
+    phone: "",
     company: "",
     photo: "",
     groupId: "",
@@ -103,7 +103,7 @@ function AddContact() {
             <li className="list-group-item">
               <input
                 type="text"
-                name="mobile"
+                name="phone"
                 value={formData.phone}
                 onChange={handleChange}
                 className="form-control"

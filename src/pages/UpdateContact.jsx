@@ -43,7 +43,7 @@ function UpdateContact() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const method = isUpdating ? "PUT" : "POST"; // Use PUT for updating
+      const method = isUpdating ? "PUT" : "POST";
       const res = await fetch(`http://localhost:5000/contacts${isUpdating ? `/${id}` : ''}`, {
         method,
         headers: {
@@ -57,7 +57,7 @@ function UpdateContact() {
         id: "",
         name: "",
         email: "",
-        mobile: "",
+        phone: "",
         company: "",
         photo: "",
         groupId: "",
@@ -114,7 +114,7 @@ function UpdateContact() {
               <input
                 type="text"
                 name="mobile"
-                value={formData.mobile}
+                value={formData.phone}
                 onChange={handleChange}
                 className="form-control"
                 placeholder="Mobile :"
